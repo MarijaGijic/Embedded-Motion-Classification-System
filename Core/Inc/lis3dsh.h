@@ -1201,6 +1201,7 @@ void    LIS3DSH_Click_IntConfig(void);
 void    LIS3DSH_ODR_LowpowerCmd(uint8_t ODR_LowPowerMode);
 void    LIS3DSH_DataRateCmd(uint8_t DataRateValue);
 void    LIS3DSH_FullScaleCmd(uint8_t FS_value);
+void	LIS3DSH_FilterBW(uint8_t BW_Value);
 void    LIS3DSH_RebootCmd(void);
 void    LIS3DSH_ReadACC(int16_t *pData);
 

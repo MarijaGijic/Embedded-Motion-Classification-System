@@ -6,5 +6,5 @@
 ../Core/Src/lis3dsh.c:249:6:LIS3DSH_ODR_LowpowerCmd	1
 ../Core/Src/lis3dsh.c:279:6:LIS3DSH_DataRateCmd	1
 ../Core/Src/lis3dsh.c:305:6:LIS3DSH_FullScaleCmd	1
-../Core/Src/lis3dsh.c:325:6:LIS3DSH_RebootCmd	1
-../Core/Src/lis3dsh.c:344:6:LIS3DSH_ReadACC	7
+../Core/Src/lis3dsh.c:326:6:LIS3DSH_RebootCmd	1
+../Core/Src/lis3dsh.c:345:6:LIS3DSH_ReadACC	7

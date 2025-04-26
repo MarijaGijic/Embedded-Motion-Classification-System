@@ -310,12 +310,13 @@ void LIS3DSH_FullScaleCmd(uint8_t FS_value)
   ACCELERO_IO_Read(&tmpreg, LIS3DSH_CTRL_REG5_ADDR, 1);
   
   /* Set new full scale configuration */
-  tmpreg &= (uint8_t)~LIS3DSH_FULLSCALE_16;
+  tmpreg &= (uint8_t)~LIS3DSH_FULLSCALE_8;
   tmpreg |= FS_value;
   
   /* Write value to MEMS CTRL_REG5 register */
   ACCELERO_IO_Write(&tmpreg, LIS3DSH_CTRL_REG5_ADDR, 1);
 }
+
 
 /**
   * @brief  Reboot memory content of LIS3DSH.
