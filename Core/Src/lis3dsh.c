@@ -284,7 +284,7 @@ void LIS3DSH_DataRateCmd(uint8_t DataRateValue)
   ACCELERO_IO_Read(&tmpreg, LIS3DSH_CTRL_REG4_ADDR, 1);
   
   /* Set new data rate configuration from 100 to 400Hz */
-  tmpreg &= (uint8_t)~LIS3DSH_DATARATE_400; 
+  tmpreg &= (uint8_t)~LIS3DSH_DATARATE_400;
   tmpreg |= DataRateValue;
   
   /* Write value to MEMS CTRL_REG4 register */
@@ -310,7 +310,7 @@ void LIS3DSH_FullScaleCmd(uint8_t FS_value)
   ACCELERO_IO_Read(&tmpreg, LIS3DSH_CTRL_REG5_ADDR, 1);
   
   /* Set new full scale configuration */
-  tmpreg &= (uint8_t)~LIS3DSH_FULLSCALE_8;
+  tmpreg &= (uint8_t)~LIS3DSH_FULLSCALE_16;
   tmpreg |= FS_value;
   
   /* Write value to MEMS CTRL_REG5 register */

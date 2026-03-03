@@ -41,14 +41,18 @@ def update_plot(frame):
             ax[0].set_title("X-axis data")
             ax[1].set_title("Y-axis data")
             ax[2].set_title("Z-axis data")
-          
+            """
+            ax[0].set_ylim(0, 1000)
+            ax[1].set_ylim(0, 1000)
+            ax[2].set_ylim(0, 1000)
+            """       
 
         except ValueError:
             pass
 
     return ax
 
-ani = animation.FuncAnimation(fig, update_plot, interval=100)
+ani = animation.FuncAnimation(fig, update_plot, interval=100, save_count=MAX_POINTS)
 
 # Display the plot
 plt.show()

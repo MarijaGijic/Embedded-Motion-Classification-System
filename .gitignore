@@ -1,0 +1,28 @@
+# STM32CubeIDE
+Debug/
+Release/
+*.elf
+*.map
+*.o
+*.su
+*.d
+*.cyclo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.settings/
+.project
+.cproject
+.idea/
+.vscode/
+
+# Binary firmware
+*.bin
+*.hex
+
+# Edge Impulse build outputs
+edgeimpulse/
+Middlewares/Third_Party/
