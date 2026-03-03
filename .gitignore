@@ -26,3 +26,15 @@ Thumbs.db
 # Edge Impulse build outputs
 edgeimpulse/
 Middlewares/Third_Party/
+
+# STM32CubeIDE project files
+*.ioc
+*.ioc_bkp
+*.launch
+*.ld
+
+# Backup and temporary IDE files
+*.bak
+*.tmp
+*.swp
+
